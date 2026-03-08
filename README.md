@@ -4,7 +4,7 @@
 
 A hybrid software/hardware simulation of the Yamaha DX21, using a Raspberry Pi Pico, a YM2151 (OPM) sound chip and an I2S DAC.
 
-[Block Diagram](https://github.com/AnotherJohnH/Hardware/blob/main/picoX21H/docs/block_diagram.pdf)
+[Block Diagram](https://github.com/SloeComputers/Hardware/blob/main/picoX21H/docs/block_diagram.pdf)
 
 ## Status
 
@@ -29,11 +29,11 @@ To do...
 
 ## Hardware
 
-![prototype](https://github.com/AnotherJohnH/Hardware/raw/main/picoX21H/docs/breadboard.jpg)
+![prototype](https://github.com/SloeComputers/Hardware/raw/main/picoX21H/docs/breadboard.jpg)
 
-[Schematic](https://github.com/AnotherJohnH/Hardware/blob/main/picoX21H/docs/schematic.pdf) for the above.
+[Schematic](https://github.com/SloeComputers/Hardware/blob/main/picoX21H/docs/schematic.pdf) for the above.
 
-See [README](https://github.com/AnotherJohnH/Hardware/blob/main/picoX21H/README.md) for more information.
+See [README](https://github.com/SloeComputers/Hardware/blob/main/picoX21H/README.md) for more information.
 
 ## Software
 
@@ -42,15 +42,15 @@ See [README](https://github.com/AnotherJohnH/Hardware/blob/main/picoX21H/README.
 This repo uses git sub-modules, so checkout using --recurse to clone all the
 dependent source...
 
-    git clone --recurse-submodules https://github.com/AnotherJohnH/picoX21H.git
+    git clone --recurse-submodules https://github.com/SloeComputers/picoX21H.git
 
 or
 
-    git clone --recurse-submodules ssh://git@github.com/AnotherJohnH/picoX21H.git
+    git clone --recurse-submodules ssh://git@github.com/SloeComputers/picoX21H.git
 
 ### Software dependencies
 
-+ https://github.com/AnotherJohnH/Platform
++ https://github.com/SloeComputers/Platform
 + arm-none-eabi-gcc
 + cmake via UNIX make or auto detection of ninja if installed
 + Python3

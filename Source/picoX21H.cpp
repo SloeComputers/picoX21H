@@ -19,7 +19,7 @@
 static const bool MIDI_DEBUG = false;
 
 static hw::FilePortal file_portal{"picoX21H",
-                                  "https://github.com/AnotherJohnH/picoX21H/"};
+                                  "https://github.com/SloeComputers/picoX21H/"};
 static SynthIO     synth_io{};
 static DX21::Synth dx21_synth{synth_io};
 
