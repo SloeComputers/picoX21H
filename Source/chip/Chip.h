@@ -9,8 +9,8 @@
 
 #include <cstdint>
 
-#include "STB/MIDIconst.h"
-#include "STB/MIDIInstrument.h"
+#include "MIDI/Const.h"
+#include "MIDI/Instrument.h"
 
 #include "Table_midi_vol.h"
 #include "Table_midi_pan.h"

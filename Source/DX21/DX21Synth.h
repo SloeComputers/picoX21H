@@ -8,7 +8,7 @@
 #include <cstdio>
 #include <unistd.h>
 
-#include "STB/MIDIInstrument.h"
+#include "MIDI/Instrument.h"
 
 #include "DX21Audio.h"
 #include "chip/YM2151/Hardware.h"
