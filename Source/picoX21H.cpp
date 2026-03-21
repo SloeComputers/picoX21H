@@ -7,8 +7,8 @@
 
 #include <cstdio>
 
-#include "Hardware/picoX21H/Config.h"
-#include "Hardware/FilePortal.h"
+#include "HWR/picoX21H/Config.h"
+#include "HWR/FilePortal.h"
 
 #include "Dac.h"
 #include "DX21/DX21Synth.h"
