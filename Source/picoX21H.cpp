@@ -18,7 +18,7 @@
 
 static const bool MIDI_DEBUG = false;
 
-static hw::FilePortal file_portal{"picoX21H",
+static HWR::FilePortal file_portal{"picoX21H",
                                   "https://github.com/SloeComputers/picoX21H/"};
 static SynthIO     synth_io{};
 static DX21::Synth dx21_synth{synth_io};
@@ -26,24 +26,24 @@ static DX21::Synth dx21_synth{synth_io};
 
 // --- Audio out DAC -----------------------------------------------------------
 
-static chip::DacImpl<hw::Dac> dac{62500};
+static chip::DacImpl<HWR::Dac> dac{62500};
 
 
 // --- Physical MIDI -----------------------------------------------------------
 
-static hw::PhysMidi phys_midi{};
+static HWR::PhysMidi phys_midi{};
 
 
 // --- USB MIDI ----------------------------------------------------------------
 
-static hw::UsbFileMidi usb{0x91C0, "picoX21H", file_portal};
+static HWR::UsbFileMidi usb{0x91C0, "picoX21H", file_portal};
 
 extern "C" void IRQ_USBCTRL() { usb.irq(); }
 
 
 // --- 16x2 LCD display --------------------------------------------------------
 
-static hw::Lcd lcd{};
+static HWR::Lcd lcd{};
 
 
 void SynthIO::displayLCD(unsigned row, const char* text)
@@ -55,7 +55,7 @@ void SynthIO::displayLCD(unsigned row, const char* text)
 
 // --- LED ---------------------------------------------------------------------
 
-static hw::Led led{};
+static HWR::Led led{};
 
 
 // -----------------------------------------------------------------------------
