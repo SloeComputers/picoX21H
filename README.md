@@ -8,6 +8,8 @@ A hybrid software/hardware simulation of the Yamaha DX21, using a Raspberry Pi P
 
 ## Status
 
+[![Build Status](https://github.com/SloeComputers/picoX21H/actions/workflows/build_on_push.yml/badge.svg)](https://github.com/SloeComputers/picoX21H/actions/workflows/build_on_push.yml)
+
 It's a working musical instrument! Any of the 128 preset patches from the DX21 ROM (v1.5)
 can be selected and played via MIDI. Patches starting to sound like the real DX21.
 
