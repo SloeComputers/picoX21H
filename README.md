@@ -70,12 +70,12 @@ Build a single hardware target e.g. rpipico2 using cmake...
 
     mkdir build
     cd build
-    cmake -DCMAKE_BUILD_TYPE=Release -DPLT_TARGET=rp2350 -DCMAKE_TOOLCHAIN_FILE=PDK/MTL/rp2350/target/toolchain.cmake ..
+    cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=PDK/TGT/rp2350/toolchain.cmake ..
     make
 
 flashable images will be found under the build sub-directory here...
 
-    build/Source/picoX21H_RPIPICO_I2S_DAC.uf2
+    build/picoX21H_RPIPICO_I2S_DAC.uf2
 
 ## License
 
