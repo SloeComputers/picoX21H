@@ -105,7 +105,7 @@ public:
       set<TIMER_IRQ>(0);  // Disable interrupts
       set<TIMER_CSM>(0);  // Clear CSM
 
-      for(unsigned voice = 0; voice < num_voices; voice++)
+      for(unsigned voice = 0; voice < getNumVoices(); voice++)
       {
          voiceOff(voice, 0);
 
@@ -245,7 +245,7 @@ public:
 
    void reset() override
    {
-      for(unsigned v = 0; v < num_voices; v++)
+      for(unsigned v = 0; v < getNumVoices(); v++)
       {
          voiceOff(v, 0);
       }

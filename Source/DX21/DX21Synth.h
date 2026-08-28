@@ -38,7 +38,7 @@ public:
       ym2151.start(ym2151_clock_hz_);
       ym2151.setClock(ym2151_clock_hz_);
 
-      for(unsigned i = 0; i < num_voices; ++i)
+      for(unsigned i = 0; i < getNumVoices(); ++i)
       {
          voiceProgram(i, 0);
       }
