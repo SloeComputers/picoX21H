@@ -18,10 +18,9 @@
 
 static const bool MIDI_DEBUG = false;
 
-static HWR::FilePortal file_portal{"picoX21H",
-                                  "https://github.com/SloeComputers/picoX21H/"};
-static SynthIO     synth_io{};
-static DX21::Synth dx21_synth{synth_io};
+static HWR::FilePortal file_portal{"picoX21H", "https://github.com/SloeComputers/picoX21H/"};
+static SynthIO         synth_io{};
+static DX21::Synth     dx21_synth{synth_io};
 
 
 // --- Audio out DAC -----------------------------------------------------------
